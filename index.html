@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar JavaScript DOM</title>
+
+  <!-- Import Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Import Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- === Header === -->
+    <header>
+      <h2><i class="ri-list-check-3"></i> DailyTask</h2>
+
+      <!-- === Input Form === -->
+      <form>
+        <input type="text" id="input-task" class="input-task" placeholder="What's your task now?">
+        <button type="submit" id="add-task" class="add-task"><i class="ri-add-fill"></i></button>
+      </form>
+      <!-- === Akhir Input Form === -->
+    </header>
+    <!-- === Akhir Header === -->
+
+    <!-- === Taks Group === -->
+    <main class="tasks-group">
+      <h3>Your tasks</h3>
+      <ul id="task-list" class="task-list"></ul>
+    </main>
+    <!-- === Akhir Taks Group === -->
+  </div>
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
