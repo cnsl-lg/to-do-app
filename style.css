@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #101010;
+  color: whitesmoke;
+}
+
+#app {
+  width: 576px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+}
+
+
+/* === Header === */
+header {
+  padding: 2rem 1rem 1rem;
+}
+/* === End of Header === */
+
+
+/* === Input Form === */
+form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+form input.input-task {
+  padding: 10px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 3px solid #808080;
+  border-right: unset;
+  flex: 6;
+  background-color: unset;
+  color: whitesmoke;
+}
+
+form input.input-task:focus {
+  outline: 3px solid #454545;
+}
+
+form button.add-task {
+  font-weight: bolder;
+  padding: 5px;
+  border: 3px solid #808080;
+  background-color: #252525;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  flex: 1;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+form button.add-task:active{
+  outline: 3px solid #333;
+}
+/* === Akhir Input Form === */
+
+
+/* === Taks Group === */
+.tasks-group {
+  padding: 0 1rem;
+}
+
+.tasks-group ul.task-list li .task-item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border: 5px solid #353535;
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 10px 0 15px;
+}
+
+.tasks-group ul.task-list li .task-item .call-to-action-task {
+  display: flex;
+  gap: 5px;
+  align-items: start;
+}
+
+.tasks-group ul.task-list li .task-item button.delete-task, .tasks-group ul.task-list li .task-item button.mark-task {
+  padding: 7px;
+  border-radius: 7px;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.tasks-group ul.task-list li .task-item button.delete-task {
+  border: 2px solid red;
+  background-color: darkred;
+}
+
+.tasks-group ul.task-list li .task-item button.mark-task {
+  border: 2px solid rgb(2, 206, 206);
+  background-color: darkcyan;
+}
+
+.tasks-group ul.task-list li .task-item p.task-text {
+  line-height: 22px;
+}
+
+.tasks-group ul.task-list li .task-item p.task-text.active{
+  font-style: italic;
+  color: #aaa;
+  text-decoration: line-through;
+}
+/* === Akhir Taks Group === */
+
+
+
+
+/* Responsive Breakpoint */
+/* === Mobile Phone === */
+@media (max-width: 576px) {
+  #app {
+    width: 100%;
+  }
+}
